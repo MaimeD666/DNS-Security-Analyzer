@@ -1,0 +1,6 @@
+{
+  "window_seconds": 60,
+  "query_count_threshold": 100,
+  "domain_length_threshold": 80,
+  "nxdomain_count_threshold": 20
+}
