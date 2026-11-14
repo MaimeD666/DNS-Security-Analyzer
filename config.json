@@ -1,6 +1,22 @@
 {
-  "window_seconds": 60,
-  "query_count_threshold": 100,
-  "domain_length_threshold": 80,
-  "nxdomain_count_threshold": 20
+  "schema_version": 2,
+  "window_sizes": [
+    60,
+    300
+  ],
+  "min_queries": 10,
+  "public_suffix_list_path": "data/public_suffix_list.dat",
+  "rules": {
+    "min_signals": 2,
+    "thresholds": {
+      "mean_subdomain_length": 40,
+      "mean_entropy": 3.5,
+      "unique_ratio": 0.8,
+      "query_rate": 1.0,
+      "txt_ratio": 0.3
+    }
+  },
+  "model": {
+    "threshold": 0.5
+  }
 }

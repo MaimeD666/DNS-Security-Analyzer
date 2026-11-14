@@ -1,38 +1,6 @@
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-env/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-*.egg-info/
-build/
-dist/
 
-# Local configuration and secrets
-.env
-.env.*
-!.env.example
-*.pem
-*.key
-
-# Editors and OS
-.idea/
-.vscode/
-.DS_Store
-Thumbs.db
-*.swp
-
-# Generated reports
-reports/
-*.log
-
-# Only intentionally selected demo captures belong in samples/
-*.pcap
-*.pcapng
-!samples/*.pcap
-!samples/*.pcapng
+# Generated local datasets and model experiments
+data/raw/
+data/features/
+models/experiments/
+*.joblib
