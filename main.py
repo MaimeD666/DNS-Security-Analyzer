@@ -1,4 +1,4 @@
-"""Командная строка DNS Security Analyzer. Ответственный: Кирилл.
+"""Командная строка DNS Security Analyzer. Ответственный: Минько Михаил.
 
 Предмет анализа и целевое поведение описаны в docs/technical_specification.md.
 Сейчас доступна справка; путь анализа намеренно не реализован.
@@ -12,7 +12,7 @@ from pathlib import Path
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="DNS Security Analyzer: выявление признаков DNS-туннелирования",
-        epilog="Состояние: подготовлено ТЗ; анализ и обучение ещё не реализованы.",
+        epilog="Пример: python main.py samples/normal.pcap --mode rules --output reports/normal. Анализ и обучение находятся в разработке.",
     )
     parser.add_argument("pcap", type=Path, help="исходный файл PCAP")
     parser.add_argument("--config", type=Path, default=Path("config.json"))

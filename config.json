@@ -5,7 +5,6 @@
     300
   ],
   "min_queries": 10,
-  "public_suffix_list_path": "data/public_suffix_list.dat",
   "rules": {
     "min_signals": 2,
     "thresholds": {
@@ -17,6 +16,14 @@
     }
   },
   "model": {
-    "threshold": 0.5
+    "threshold": 0.5,
+    "hidden_layer_sizes": [
+      16,
+      8
+    ],
+    "activation": "relu",
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "random_state": 42
   }
 }
